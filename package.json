@@ -14,9 +14,9 @@
   ],
   "scripts": {
     "dev": "nodemon",
-    "start": "probot run ./index.js",
-    "lint": "standard --fix",
-    "test": "jest && standard",
+    "start": "probot run ./src/index.js",
+    "lint": "prettier --write \"src/**/*.js\"",
+    "test": "jest",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
@@ -26,8 +26,8 @@
     "jest": "^24.0.0",
     "nock": "^10.0.0",
     "nodemon": "^1.17.2",
-    "smee-client": "^1.0.2",
-    "standard": "^12.0.1"
+    "prettier": "^1.18.2",
+    "smee-client": "^1.0.2"
   },
   "engines": {
     "node": ">= 8.3.0"
