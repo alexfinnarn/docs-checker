@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "nodemon",
     "start": "probot run ./src/index.js",
-    "lint": "prettier --write \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint \"src/**/*.js\" --quiet",
     "test": "jest",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
@@ -23,6 +24,8 @@
     "probot": "^7.2.0"
   },
   "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
     "jest": "^24.0.0",
     "nock": "^10.0.0",
     "nodemon": "^1.17.2",
