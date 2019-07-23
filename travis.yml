@@ -7,3 +7,8 @@ notifications:
 branches:
   only:
    - dev
+
+install:
+  - npm install
+script:
+  - npm run test
